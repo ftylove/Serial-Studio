@@ -66,10 +66,10 @@ DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x050F00
 CONFIG += c++11
 CONFIG += silent
 
-CONFIG(debug, debug|release) {
-    CONFIG += sanitizer
-    CONFIG += sanitize_address
-}
+#CONFIG(debug, debug|release) {
+#    CONFIG += sanitizer
+#    CONFIG += sanitize_address
+#}
 
 CONFIG(release, debug|release) {
     CONFIG += ltcg
